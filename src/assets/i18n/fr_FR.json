@@ -1,0 +1,22 @@
+{
+  "SearchFlightForm":{
+    "header.label":"Recherche de vols",
+    "companyName.label":"Companie",
+    "tripType.label":"Voyage",
+    "aircraft.label":"Type de vol",
+    "company":{
+      "AIRFRANCE":"Air France",
+      "AIRARABIA":"Air Arabia",
+      "EMIRATES":"Emirates",
+      "QATARAIRWAYS":"Qatar Airways"
+    },
+    "trip":{
+      "ONEWAYTICKET":"Aller simple",
+      "ROUNDTRIP":"Aller-retour"
+    },
+    "flightType":{
+      "DIRECT":"Voi direct",
+      "CONNECTING":"Vol avec correspondance"
+    }
+  }
+}

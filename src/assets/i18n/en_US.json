@@ -1,0 +1,28 @@
+{
+  "SearchFlightForm":{
+    "header.label":"Search flights",
+    "companyName.label":"Company",
+    "tripType.label":"Flight Type",
+    "aircraft.label":"Aircraft Type",
+    "departingFrom.label":"Departing From",
+    "arrivalAt.label":"Arrival At",
+    "deparDateMin.label":"Departing date min",
+    "deparDateMax.label":"Departing date max",
+    "deparTimeMin.label":"Departing time min",
+    "deparTimeMax.label":"Departing time max",
+    "company":{
+      "AIRFRANCE":"Air France",
+      "AIRARABIA":"Air Arabia",
+      "EMIRATES":"Emirates",
+      "QATARAIRWAYS":"Qatar Airways"
+    },
+    "trip":{
+      "ONEWAYTICKET":"One-Way ticket",
+      "ROUNDTRIP":"Round trip"
+    },
+    "flightType":{
+      "DIRECT":"Direct flight",
+      "CONNECTING":"Connecting flight"
+    }
+  }
+}

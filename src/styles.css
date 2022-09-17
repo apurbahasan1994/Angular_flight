@@ -1,1 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
+
+fieldset#search {
+  background: #f1f1f1;
+  border: 0 none;
+  width: 100%;
+  border-radius: 1px solid #ccc;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  float: left;
+  margin-right:133px;
+  flex-wrap: wrap;
+}
+
+.right {
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+
+}
+.firstRight{
+  width: auto;
+  float: right;
+  margin-left: 2px;
+  text-align: left;
+}
+.nextRight{
+  width: auto;
+  float: right;
+  margin-right: 20px;
+  text-align: left;
+}
+#mainMargin{
+  margin-left: 125px;
+}
+.lefSide{
+  margin-left: 50px;
+
+}
+#main{
+  /* width: 1219px; */
+  /* margin-left:500 px; */
+  margin-left: 53px;
+  float: left;
+  text-align:left;
+}
+
+.menu{
+  overflow: hidden;
+  background:#3f51b5;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.menu a {
+  display: flex;
+  gap:10px;
+  text-decoration: none;
+  color: #fff;
+  padding:10px;
+
+}
+.menu a:hover{
+  background-color: #1d31ad;
+}
+.mainContainer{
+  float: left;
+  width: 90%;
+  display: flex;
+  margin: 0px auto;
+}
+
+#mainBanner{
+  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding-top: 2px;
+  width: 101.57%;
+  background: #3f51b5;
+  margin: 40px 0 0 2px;
+  height: 26.59px;
+}
+#mainBanner h3{
+  float: left;
+  margin:0;
+  font-size: 0.9rem;
+  font-weight: nomal;
+  padding-left: 8px;
+  text-align: left;
+  width:50%
+}
+#mainBanner p{
+  margin: 0;
+  float: right;
+}
+#mainBanner p span{
+  width: 28px;
+  height: 28px;
+  float: left;
+  margin: -2px 0px 0px 0px;
+  padding: 2px 0px 0px 0px;
+}
+
+
+#mainBanner p span.expand{
+  background:#f1f1f1;
+  cursor: pointer;
+  color: #3f51b5;
+}
+#mainBanner p span.expand:hover{
+  background:#DDDDDD;
+
+}
+
+.mat-table{
+  border-spacing: 10px;
+  margin-left: 1.5px;
+}
+#flights .mat-header-cell{
+  color: #000;
+  text-decoration:underline;
+  font-weight: boold;
+  border-bottom: 1px solid #DADADA;
+  border-right: 1px solid #DADADA;
+}
+#flights .mat-row:hover{
+  background-color: #F7DEBE;
+}
+
+td:not(.mat-calendar-body-cell):not(.mat-calendar-body-label){
+  border-right: 1px solid #DADADA;
+  font-size: 0.9rem;
+  text-align: center;
+}
+#footer{
+  display: table-row;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+}
+
+#footer .mat-toolbar span{
+  font-size: 0.6em;
+  margin-top: 10px;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  display: table;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,49 @@
+<div>
+  <form [formGroup]="language">
+    <mat-form-field>
+      <mat-select formControlName="language" (selectionChange)="changeLang($event.value)">
+        <mat-option *ngFor="let lang of langs" [value]="lang">{{lang}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div class="menu">
+  <ul class="menu">
+    <li>
+      <a>
+        <mat-icon class="lefticon">home</mat-icon>Home
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>flight</mat-icon>Flight
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>bookmark</mat-icon>Bookmarks
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>pie_chart</mat-icon>Synthesis
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>contacts</mat-icon>Contacts
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>help</mat-icon>Help
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>power_settings_new</mat-icon>Sign out
+      </a>
+    </li>
+
+  </ul>
+</div>

@@ -1,0 +1,96 @@
+<mat-paginator #paginator [pageSizeOptions]="[5,10,20]"></mat-paginator>
+<div id="flights">
+  <table mat-table [dataSource]="flights" matSort>
+
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header></th>
+      <td mat-cell *matCellDef="let flight">
+        <mat-checkbox></mat-checkbox>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="idFlight">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.idFlight }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="companyName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Company</th>
+      <td mat-cell *matCellDef="let flight">{{"SearchFlightForm.company."+(flight.companyName|companyType)|translate }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="flightType">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Flight Type</th>
+      <td mat-cell *matCellDef="let flight">{{"SearchFlightForm.flightType."+ (flight.flightType|flightType)|translate }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="travelType">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Travel Type</th>
+      <td mat-cell *matCellDef="let flight">{{"SearchFlightForm.trip."+ (flight.travelType|travelType)|translate }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="departureLocation">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Departure Location
+      </th>
+      <td mat-cell *matCellDef="let flight">{{ flight.departureLocation }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="arrivalLocation">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Arrival Location</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.arrivalLocation }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="departureDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Departure Date</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.departureDate | date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="departureTime">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Departure Time</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.departureTime|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="arrivalDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Arrival Date</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.arrivalDate|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="arrivalTime">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Arrival Time</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.arrivalTime|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="backDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Back Date</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.backDate|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="backTime">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Back Time</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.backTime|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="flightDuration">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Flight Duration</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.flightDuration|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="connectionDuration">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Connection Duration
+      </th>
+      <td mat-cell *matCellDef="let flight">{{ flight.connectionDuration|date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="aircrftType">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Aircraft Type</th>
+      <td mat-cell *matCellDef="let flight">{{ flight.aircrftType }}</td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+</div>
